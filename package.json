@@ -1,14 +1,14 @@
 {
   "scripts": {
     "test": "npm run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 1000 --app \"rollup -c example/rollup.config.mjs -w\""
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 1000 --app \"rollup -c {{rollup.config}} -w\""
   },
   "devDependencies": {
     "testcafe": "^1.9.1"
   },
   "template": {
     "properties": {
-      "rollup.config": "examples/rollup.config.mjs"
+      "rollup": { "config": "examples/rollup.config.mjs" }
     },
     "mergers": [
       {
