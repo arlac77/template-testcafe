@@ -7,6 +7,9 @@
     "testcafe": "^1.9.1"
   },
   "template": {
+    "properties": {
+      "rollup.config": "examples/rollup.config.mjs"
+    },
     "mergers": [
       {
         "type": "YAML",
