@@ -28,9 +28,6 @@
         }
       }
     ],
-    "inheritFrom": [
-      "arlac77/template-web-component"
-    ],
     "usedBy": [
       "arlac77/component-template-designer"
     ]
