@@ -8,7 +8,9 @@
   },
   "template": {
     "properties": {
-      "rollup": { "config": "example/rollup.config.mjs" }
+      "rollup": {
+        "config": "example/rollup.config.mjs"
+      }
     },
     "mergers": [
       {
@@ -33,6 +35,9 @@
     ],
     "inheritFrom": [
       "arlac77/template-web-component"
+    ],
+    "usedBy": [
+      "arlac77/component-template-designer"
     ]
   }
 }
