@@ -8,7 +8,8 @@
   },
   "template": {
     "properties": {
-     "testcafe": { "options": "--app-init-delay 1000" }},
+      "testcafe": { "options": "--app-init-delay 1000" }
+    },
     "mergers": [
       {
         "type": "YAML",
