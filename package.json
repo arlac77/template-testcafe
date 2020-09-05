@@ -32,7 +32,8 @@
       }
     ],
     "usedBy": [
-      "arlac77/component-template-designer"
+      "arlac77/component-template-designer",
+      "arlac77/template-svelte-component"
     ]
   }
 }
