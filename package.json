@@ -8,7 +8,7 @@
   },
   "template": {
     "properties": {
-      "testcafe": { "options": "--app-init-delay 1000 --skip-js-errors" }
+      "testcafe": { "options": "--app-init-delay 1000" }
     },
     "mergers": [
       {
