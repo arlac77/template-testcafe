@@ -8,7 +8,9 @@
   },
   "template": {
     "properties": {
-      "testcafe": { "options": "--app-init-delay 1000" }
+      "testcafe": {
+        "options": "--app-init-delay 1000"
+      }
     },
     "mergers": [
       {
@@ -33,6 +35,7 @@
     ],
     "usedBy": [
       "arlac77/component-template-designer",
+      "arlac77/npm-navigator",
       "arlac77/template-svelte-component"
     ]
   }
