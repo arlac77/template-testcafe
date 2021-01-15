@@ -36,11 +36,14 @@
         "type": "Readme",
         "pattern": "README.md",
         "options": {
-          "badges" : [{
-            "url": "https://github.com/DevExpress/testcafe",
-            "name": "Tested with TestCafe",
-            "image": "https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg"
-          }]
+          "badges": [
+            {
+              "name": "Tested with TestCafe",
+              "url": "https://github.com/DevExpress/testcafe",
+              "icon": "https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg",
+              "order": 0.5
+            }
+          ]
         }
       }
     ],
