@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [-12, -14, -16, 16.10.0]
+        node: [-14, -16, 16.10.0]
         browser: [chrome, firefox]
     #        include:
     #          - os: macos-latest
