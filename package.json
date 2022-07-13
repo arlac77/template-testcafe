@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "npm run test:cafe",
-    "test:cafe": "--overwrite-- testcafe $BROWSER:headless tests/cafe/*.js -s build/test {{testcafe.options}} --app \"{{testcafe.app}}\""
+    "test:cafe": "--overwrite-- testcafe $BROWSER:headless tests/cafe/*.js -s build/test {{testcafe.options}} --app {{testcafe.app}}"
   },
   "devDependencies": {
     "testcafe": "^1.19.0"
