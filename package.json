@@ -9,7 +9,7 @@
   "template": {
     "properties": {
       "testcafe": {
-        "options": "--page-request-timeout 9000 --app-init-delay 3000"
+        "options": "--page-request-timeout 3000 --app-init-delay 3000"
       }
     },
     "mergers": [
