@@ -14,6 +14,10 @@
     },
     "mergers": [
       {
+        "type": "Skip",
+        "pattern": ".github/workflows/ci.yml"
+      },
+      {
         "type": "YAML",
         "pattern": ".github/workflows/*.yml",
         "options": {
