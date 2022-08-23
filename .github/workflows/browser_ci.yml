@@ -19,7 +19,6 @@ jobs:
         with:
           node-version:
             - ${{ matrix.node-version }}
-            - --delete-- ${{ matrix.node }}
           cache: npm
       - run: npm cit
         env:
