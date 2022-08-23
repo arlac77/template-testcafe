@@ -26,7 +26,7 @@
             "*": {
               "removeEmpty": true
             },
-            "*.node": {
+            "*.node-version": {
               "scope": "deps",
               "merge": "mergeVersionsPreferNumeric"
             },
