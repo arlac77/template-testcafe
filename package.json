@@ -55,6 +55,7 @@
     "usedBy": [
       "arlac77/component-template-designer",
       "arlac77/mf-styling",
+      "arlac77/npm-dep-graph",
       "arlac77/npm-navigator",
       "arlac77/template-svelte-component"
     ]
