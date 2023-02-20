@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "npm run test:cafe",
-    "test:cafe": "--overwrite-- testcafe $BROWSER:headless tests/cafe/*.js -s build/test {{testcafe.options}} --app {{testcafe.app}}"
+    "test:cafe": "--overwrite-- testcafe --experimental-esm $BROWSER:headless tests/cafe/*.*js -s build/test {{testcafe.options}} --app {{testcafe.app}}"
   },
   "devDependencies": {
     "testcafe": "^2.3.1"
@@ -9,7 +9,7 @@
   "template": {
     "properties": {
       "testcafe": {
-        "options": "--page-request-timeout 5000 --app-init-delay 9000"
+        "options": "--page-request-timeout 5000 --app-init-delay 8000"
       }
     },
     "mergers": [
