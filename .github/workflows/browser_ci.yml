@@ -15,7 +15,6 @@ jobs:
         os:
           - ubuntu-latest
         node-version:
-          - --delete-- 18
           - --delete-- 20
           - 20.9.0
         browser:
