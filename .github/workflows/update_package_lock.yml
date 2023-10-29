@@ -1,5 +1,6 @@
 jobs:
   update_package_lock:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         os:
@@ -8,3 +9,8 @@ jobs:
           - chrome
         node-version:
           - 20.9.0
+    steps:
+      - run: npm test
+        env:
+          BROWSER: ${{ matrix.browser }}
+
