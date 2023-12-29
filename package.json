@@ -4,7 +4,7 @@
     "test:cafe": "--overwrite-- testcafe $BROWSER:headless tests/cafe/*-cafe.mjs -s build/test {{testcafe.options}} --app {{testcafe.app}}"
   },
   "devDependencies": {
-    "testcafe": "^3.4.0"
+    "testcafe": "^3.5.0"
   },
   "template": {
     "properties": {
