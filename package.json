@@ -53,11 +53,12 @@
       }
     ],
     "usedBy": [
-      "template-tools/template-designer",
       "arlac77/mf-styling",
       "arlac77/npm-dep-graph",
       "arlac77/npm-navigator",
-      "arlac77/template-svelte-component"
+      "arlac77/template-svelte-component",
+      "konsumation/frontend-svelte",
+      "template-tools/template-designer"
     ]
   }
 }
