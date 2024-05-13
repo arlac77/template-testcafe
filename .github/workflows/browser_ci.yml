@@ -19,7 +19,7 @@ jobs:
         os:
           - ubuntu-latest
         node-version:
-          - --delete-- 18.*
+          - --delete-- 18.18.2
           - --delete-- 19.*
           - --delete-- 20.11.*
           - --delete-- 20.12.0
