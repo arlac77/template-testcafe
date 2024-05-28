@@ -22,7 +22,7 @@ jobs:
           - --delete-- 22.0.0
           - --delete-- 22.1.0
           - --delete-- 22.2.0
-          - 20.13.1
+          - 20.14.0
         browser:
           - chrome
     steps:
