@@ -21,6 +21,7 @@ jobs:
           - --delete-- 20.13.0
           - --delete-- 20.13.1
           - --delete-- 20.14.0
+          - --delete-- 20.15.0
           - --delete-- 22.0.0
           - --delete-- 22.1.0
           - --delete-- 22.2.0
