@@ -31,7 +31,8 @@ jobs:
           - --delete-- 22.1.0
           - --delete-- 22.2.0
           - --delete-- 22.3.0
-          - 22.4.0
+          - --delete-- 22.4.0
+          - 22.4.1
         browser:
           - chrome
 #          - firefox
@@ -79,7 +80,7 @@ jobs:
       - uses: actions/checkout@v4.1.7
       - uses: actions/setup-node@v4.0.2
         with:
-          node-version: 22.4.0
+          node-version: 22.4.1
           cache: npm
           cache-dependency-path: 'package-lock.json'
       - run: npm ci
