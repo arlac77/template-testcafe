@@ -89,8 +89,10 @@ jobs:
           node-version: 22.6.0
           cache: npm
           cache-dependency-path: 'package-lock.json'
-      - run: npm ci
-      - run: npx semantic-release
+      - name: checkout
+        run: npm ci
+      - name: release
+        run: npx semantic-release
         env:
           CI: 'true'
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
