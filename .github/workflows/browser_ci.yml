@@ -57,10 +57,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: npm
           cache-dependency-path: 'package-lock.json'
-      - run: npm cit
+      - name: npm install
+        run: npm cit
         env:
           BROWSER: ${{ matrix.browser }}
-      - uses: actions/upload-artifact@v4
+      - name: upload artiface
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots-${{ matrix.browser }}
           path: ${{ github.workspace }}/build/test/**/*
@@ -76,7 +78,7 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
-      - name: Dependencies
+      - name: install dependencies
         run: |2
           if [ ! -f /usr/bin/pacman ]
           then
