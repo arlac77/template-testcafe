@@ -39,7 +39,7 @@ jobs:
           - --delete-- 22.5.1
           - --delete-- 22.6.0
           - --delete-- 22.7.0
-          - 22.8.0
+          - 22.9.0
         browser:
           - chrome
 #          - firefox
@@ -92,7 +92,7 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v4.0.3
         with:
-          node-version: 22.8.0
+          node-version: 22.9.0
           cache: npm
           cache-dependency-path: 'package-lock.json'
       - name: install
