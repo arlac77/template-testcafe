@@ -14,7 +14,7 @@ jobs:
         node-version:
           - --delete-- 22.7.0
           - --delete-- 22.8.0
-          - 22.9.0
+          - 22.10.0
         browser:
           - chrome
     steps:
