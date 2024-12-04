@@ -41,6 +41,8 @@ jobs:
           - --delete-- 22.7.0
           - --delete-- 22.8.0
           - --delete-- 22.9.0
+          - --delete-- 22.10.0
+          - --delete-- 22.11.0
           - 22.12.0
         browser:
           - chrome
