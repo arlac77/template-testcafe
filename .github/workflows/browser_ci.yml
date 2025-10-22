@@ -9,8 +9,9 @@
       - next
 
 permissions:
-  contents: read 
-      
+  contents: read
+  id-token: write
+ 
 jobs:
   test:
     runs-on: ${{ matrix.os }}
