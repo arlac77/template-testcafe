@@ -9,38 +9,13 @@ on:
 jobs:
   update_package_lock:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version:
-          - --delete-- 22.7.0
-          - --delete-- 22.8.0
-          - --delete-- 22.9.0
-          - --delete-- 22.10.0
-          - --delete-- 22.11.0
-          - --delete-- 22.12.0
-          - --delete-- 22.13.0
-          - --delete-- 22.13.1
-          - --delete-- 22.14.0
-          - --delete-- 22.15.0
-          - --delete-- 22.15.1
-          - --delete-- 22.16.0
-          - --delete-- 22.17.0
-          - --delete-- 22.17.1
-          - --delete-- 22.18.0
-          - --delete-- 22.19.0
-          - --delete-- 22.20.0
-          - --delete-- 22.21.0
-          - --delete-- 24.10.0
-          - 24.11.1
-        browser:
-          - chrome
     steps:
       - name: checkout
         uses: actions/checkout@v5.0.0
       - name: prepare node
         uses: actions/setup-node@v6.0.0
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 24.11.1
       - name: remove lock
         run: rm package-lock.json
       - name: install playwright
@@ -48,7 +23,7 @@ jobs:
       - name: test
         run: npm install-test
         env:
-          BROWSER: ${{ matrix.browser }}
+          BROWSER: chrome
       - name: create pull request
         uses: gr2m/create-or-update-pull-request-action@v1.10.1
         env:
