@@ -9,6 +9,7 @@ on:
 jobs:
   update_package_lock:
     runs-on: ubuntu-latest
+    strategy: --delete--
     steps:
       - name: checkout
         uses: actions/checkout@v5.0.0
