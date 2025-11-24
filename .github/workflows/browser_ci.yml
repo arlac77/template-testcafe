@@ -76,7 +76,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: 'package-lock.json'
+          cache-dependency-path: --delete--
       - name: npm install
         run: npm cit
         env:
@@ -114,7 +114,7 @@ jobs:
         with:
           node-version: 24.11.1
           cache: npm
-          cache-dependency-path: 'package-lock.json'
+          cache-dependency-path: --delete--
       - name: install
         run: npm ci
       - name: release
