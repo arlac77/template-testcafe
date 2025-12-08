@@ -75,7 +75,6 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: --delete--
       - name: install npm
         run: npm cit
         env:
@@ -112,7 +111,6 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           node-version: 24.11.1
-          cache: --delete--
       - name: install
         run: npm ci
       - name: release
