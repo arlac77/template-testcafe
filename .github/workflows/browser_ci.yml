@@ -76,7 +76,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: --delete--
-          cache-dependency-path: --delete--
       - name: install npm
         run: npm cit
         env:
@@ -114,7 +113,6 @@ jobs:
         with:
           node-version: 24.11.1
           cache: --delete--
-          cache-dependency-path: --delete--
       - name: install
         run: npm ci
       - name: release
