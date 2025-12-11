@@ -59,7 +59,7 @@ jobs:
           - --delete-- 22.21.0
           - --delete-- 24.10.0
           - --delete-- 24.11.0
-          - 24.11.1
+          - 24.12.0
         browser:
           - chrome
 #          - firefox
@@ -110,7 +110,7 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v6.1.0
         with:
-          node-version: 24.11.1
+          node-version: 24.12.0
       - name: install
         run: npm ci
       - name: release
