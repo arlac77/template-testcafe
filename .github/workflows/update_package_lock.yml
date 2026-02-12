@@ -9,14 +9,13 @@ on:
 jobs:
   update_package_lock:
     runs-on: ubuntu-latest
-    strategy: --delete--
     steps:
       - name: checkout
         uses: actions/checkout@v6.0.2
       - name: prepare node
         uses: actions/setup-node@v6.2.0
         with:
-          node-version: 24.13.0
+          node-version: 24.13.1
       - name: remove lock
         run: rm package-lock.json
       - name: install playwright
